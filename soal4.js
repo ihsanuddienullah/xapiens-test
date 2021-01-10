@@ -6,7 +6,7 @@ program akan mencari angka tersebut dan menyebutkan berapa langkah yang dibutuhk
 */
 
 const randomInt = Math.floor(Math.random() * 100);
-console.log(randomInt);
+console.log(`nilai random yang dipiilih : ${randomInt}`);
 let arr = [];
 for (let i = 0; i <= 100; i++) {
     arr.push(i);
@@ -15,8 +15,8 @@ for (let i = 0; i <= 100; i++) {
 // Tebak angka
 let step = 0;
 let randomChoice = Math.floor(Math.random() * 100);
-console.log(randomChoice);
+console.log(`pilihan pertama program ${randomChoice}`);
 do {
     step++
 } while (randomChoice !== randomInt);
-console.log(step);
+console.log(`program mencari angka sebanyak ${step} langkah`);

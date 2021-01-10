@@ -16,9 +16,9 @@ let grup = [];
 for (let i = 0; i < arr.length; i++) {
     grup[i] = arr.splice(0, sizegrup);
 }
-console.log(grup[0]);
-console.log(grup[1]);
-console.log(grup[2]);
+console.log(`kelompok 1 ${grup[0]}`);
+console.log(`kelompok 2 ${grup[1]}`);
+console.log(`kelompok 3 ${grup[2]}`);
 
 // fungsi mengurutkan dari besar ke kecil
 function sortGrup(array) {
@@ -39,9 +39,9 @@ function sortGrup(array) {
     } while (swipe);
     return x;
 }
-console.log(sortGrup(grup[0]));
-console.log(sortGrup(grup[1]));
-console.log(sortGrup(grup[2]));
+console.log(`hasil urut kelompok 1 : ${sortGrup(grup[0])}`);
+console.log(`hasil urut kelompok 2 : ${sortGrup(grup[1])}`);
+console.log(`hasil urut kelompok 3 : ${sortGrup(grup[2])}`);
 
 // fungsi total data
 function sumGrup(array) {
@@ -51,18 +51,18 @@ function sumGrup(array) {
     }
     return sum;
 }
-console.log(sumGrup(grup[0]));
-console.log(sumGrup(grup[1]));
-console.log(sumGrup(grup[2]));
+console.log(`total data kelompok 1 : ${sumGrup(grup[0])}`);
+console.log(`total data kelompok 2 : ${sumGrup(grup[1])}`);
+console.log(`total data kelompok 3 : ${sumGrup(grup[2])}`);
 
 // fungsi rata-rata
 function avgGrup(array) {
     let sum = sumGrup(array);
     return sum / array.length;
 }
-console.log(avgGrup(grup[0]));
-console.log(avgGrup(grup[1]));
-console.log(avgGrup(grup[2]));
+console.log(`rata-rata data kelompok 3 : ${avgGrup(grup[0])}`);
+console.log(`rata-rata data kelompok 3 : ${avgGrup(grup[1])}`);
+console.log(`rata-rata data kelompok 3 : ${avgGrup(grup[2])}`);
 
 // Mencari nilai max dan min 
 function minmaxGrup(array) {

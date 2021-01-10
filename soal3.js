@@ -55,7 +55,7 @@ for (let i = 0; i < text.length; i++) {
         newText += swipeChar(text[i]);     
     }
 }
-console.log(newText);
+console.log(`text setelah digeser : ${newText}`);
 
 
 
