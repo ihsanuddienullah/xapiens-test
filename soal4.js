@@ -18,5 +18,6 @@ let randomChoice = Math.floor(Math.random() * 100);
 console.log(`pilihan pertama program ${randomChoice}`);
 do {
     step++
+    randomChoice = Math.floor(Math.random() * 100);
 } while (randomChoice !== randomInt);
 console.log(`program mencari angka sebanyak ${step} langkah`);
