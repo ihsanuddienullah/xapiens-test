@@ -51,9 +51,12 @@ let newText = ''
 for (let i = 0; i < text.length; i++) {
     if (text[i] === ' ') {
         newText += ' ';
+    } else if (text[i] === '.') {
+        newText += '.';
+    } else if (text[i] === ',') {
+        newText += ',';
     } else {
         newText += swipeChar(text[i]);
     }
 }
-console.log(swipeChar('x'));
 console.log(`text setelah digeser : ${newText}`);
