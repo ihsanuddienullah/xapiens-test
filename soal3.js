@@ -34,28 +34,26 @@ function swipeChar(char) {
     for (let i = 0; i < alphabet.length; i++) {
         if (charLowerCase === alphabet[i]) {
             if (i < 21) {
-                letter = alphabet[i+5];                
+                letter = alphabet[i + 5];
             } else {
-                const alphabet2 = 'abcde'                
-                for (let j = 0; j < alphabet2.length; j++) {
-                    if (charLowerCase === alphabet2[j]) {
+                const alphabetSisa = 'vwxyz';
+                for (let j = 0; j < alphabetSisa.length; j++) {
+                    if (charLowerCase === alphabetSisa[j]) {
                         letter = alphabet[j];
-                    }                    
+                    }
                 }
             }
         }
     }
     return letter;
 }
-let newText =''
+let newText = ''
 for (let i = 0; i < text.length; i++) {
     if (text[i] === ' ') {
-        newText += ' ';     
+        newText += ' ';
     } else {
-        newText += swipeChar(text[i]);     
+        newText += swipeChar(text[i]);
     }
 }
+console.log(swipeChar('x'));
 console.log(`text setelah digeser : ${newText}`);
-
-
-
